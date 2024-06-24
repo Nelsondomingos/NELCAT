@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/CadastroLogin.css">
+    <link rel="stylesheet" href="../..CSS/Just_scrollbar.css">
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section class="titulo fadeIn">
+            <a href="./index.html"><h3>Nelcat</h3></a> 
+        </section>
+        <section class="pag-cadast">
+            <article class="card-cadast descendo">
+                <div class="card-2-cadast">
+                    <form id="myForm">
+                        <div id="errorLog">
+                            <img id="imgError" class="errorImg" src="../../IMG/ErrorElement.png" alt="">
+                            <p>Número de telefone ou senha incorretos.</p>
+                        </div>  
+                        <label for="email" class="labelElement email">Email</label>
+                        <input type="email" name=""  class="input" id="email" placeholder="Email" required >
+                        <section>
+                            <label for="password" class="labelElement">Palavra Passe</label>
+                            <input type="password" name=""  class="input" id="password" placeholder="Palavra-passe"  required>
+                            <div id="eyes" onclick="showPassWord ()"></div>
+                        </section>
+                        <div class="button">
+                            <button id="btn">
+                                <p id="specialSpan"> Entrar </p>
+                                <div class="loading">
+                                    <div class="carregando" ></div>
+                                </div>
+                            </button>
+                        </div>            
+                    </form>
+                    <p><a href="#">Esqueci a Senha</a></p>
+                    <p class="otherWay">Ou Entrar com:</p>
+                    <div class="cadast-rede">
+                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
+                        <a href="#"><img src="" alt=""></a>
+                    </div>
+                    <div class="cadastre">
+                        <p>Não tens uma conta? <a href="Cadastro.html" id="cadastre-se" >Cadastre-se</a></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    <main>
+<script src="../../JS/Validation.js"></script>
+</body>
+</html>

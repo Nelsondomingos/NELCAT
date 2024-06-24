@@ -1,0 +1,254 @@
+* {
+  outline: none;
+  text-decoration: none;
+}
+/* Algumas informações que o header não pegou externamente */
+.cabecalho {
+  background: white;
+  margin-top: -46px;
+  position: fixed;
+  z-index: 1;
+}
+.Nelcat {
+  color: #3e0b6e;
+}
+.cabecalho .justList .link li::after {
+  content: " ";
+  width: 0%;
+  height: 3px;
+  background: #3e0b6e;
+  margin-left: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.cabecalho .justList .link li {
+  color: #3e0b6e;
+}
+.cabecalho .justList .link:hover ::after {
+  width: 97%;
+  transition: 0.5s ease-in-out;
+}
+.cadastro h3 {
+  text-align: center;
+}
+/* Início do Body */
+body {
+  background: rgb(173, 165, 165);
+  margin: 46px auto 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Sessao1 */
+.mainPag .mainSection {
+  width: 100%;
+  height: 1000px;
+  background: rgb(173, 165, 165);
+}
+/* Planos */
+.plans {
+  width: 430px;
+  height: 80px;
+  padding-top: 60px;
+  border-radius: 30px;
+  text-align: center;
+}
+.plans > h1 {
+  color: black;
+  height: 55px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  transform: translateX(15.5em);
+  padding-top: 22px;
+}
+.mainPag .mainSection .informatioAboutService .sercices {
+  text-align: center;
+}
+.mainPag .mainSection .informatioAboutService {
+  width: 515px;
+  margin-left: 460px;
+  padding-top: 28px;
+}
+.mainPag .mainSection .informatioAboutService p {
+  font-size: 16px;
+  width: 510px;
+  text-align: center;
+  color: whitesmoke;
+}
+/* Início da Plantinum */
+.mainPag .mainSection .plantinum {
+  margin: 70px 0px 0px 230px;
+  background: white;
+  border-radius: 45px;
+  text-shadow: 1px 1px 1px black;
+  width: 450px;
+  height: 680px;
+}
+.mainPag .mainSection .plantinum {
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: 20px;
+  padding-top: 40px;
+}
+.mainPag .mainSection .plant {
+  background: lightgray;
+  border-radius: 35px 35px 0px 0px;
+  margin-top: -70px;
+  width: 100%;
+  height: 300px;
+}
+.mainPag .mainSection .plant .abouOurPlan {
+  color: rgb(2, 14, 2);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: 25px;
+  padding: 50px 0px 0px 50px;
+}
+.mainPag .mainSection .plant .prices {
+  margin-top: -35px;
+}
+#otherPrice {
+  margin-top: -50px;
+}
+.mainPag .mainSection .plant .prices h1 {
+  color: rgb(0, 56, 0);
+  font-size: 70px;
+  padding: 1px 0px 0px 140px;
+}
+.mainPag .mainSection .plant .prices .value {
+  color: white;
+  margin-left: 46px;
+}
+.mainPag .mainSection .plant .prices .currency {
+  color: rgb(0, 56, 0);
+  margin: -120px 0px 0px 105px;
+  font-weight: bold;
+}
+.mainPag p {
+  color: rgb(0, 7, 0);
+}
+span {
+  color: white;
+}
+.mainPag .mainSection .plant .month {
+  color: rgb(0, 56, 0);
+  font-size: 25px;
+  margin: 40px 0px 0px 210px;
+}
+#otherColor {
+  color: white;
+}
+.mainPag .mainSection .plant button {
+  background: rgb(0, 56, 0);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 45%;
+  height: 2.6em;
+  margin: 20px 0px 0px 120px;
+  padding: 0px 0px 0px 7px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.mainPag .mainSection .plant button:hover {
+  background: lightgray;
+  border: 2px solid rgb(0, 56, 0);
+  color: rgb(0, 56, 0);
+  transition: 0.5s;
+}
+.mainPag .plantinum .othersInformationAboutNelcat p {
+  padding: 35px 0px 0px 60px;
+}
+.hr {
+  height: 2px;
+  margin-left: -20px;
+  text-shadow: 2px gray;
+  color: black;
+  width: 380px;
+}
+.hrr {
+  height: 2px;
+  width: 380px;
+  text-shadow: 2px gray;
+  color: black;
+  width: 380px;
+}
+#errorContrato{
+  color: rgb(239, 148, 148);
+  padding-left: 125px;
+  padding-top: 6.5px;
+  display: none;
+}
+.mainPag .plantinum .othersInformationAboutNelcat span {
+  padding-left: 80px;
+  font-style: italic;
+}
+.mainPag .plantinum .ourAdvantage {
+  padding-left: 60px;
+}
+/* Segunda sessão */
+.mainPag .secondPlantinum {
+  text-shadow: 1px 1px 1px black;
+  margin-top: -790px;
+  margin-left: 500px;
+}
+#otherCurrency {
+  color: white;
+}
+.mainPag .secondPlantinum .plantinum .plant {
+  background: #3e0b6e;
+}
+.mainPag .secondPlantinum .plantinum .plant .abouOurPlan {
+  margin-left: 50px;
+  color: white;
+}
+.mainPag .secondPlantinum .othersInformationAboutNelcat {
+  margin: -410px 0px 0px 260px;
+  width: 500px;
+  padding: 20px;
+}
+.mainPag .secondPlantinum .moreInformation {
+  width: 500px;
+  margin: -30px 0px 0px 280px;
+}
+.mainPag .secondPlantinum p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  padding-left: 40px;
+}
+#checkMark {
+  margin: 10px 200px 0px;
+}
+.sucedido {
+  width: 80px;
+  height: 50px;
+  margin: 15px 0px 0px 200px;
+}
+.sucedido img {
+  width: 30px;
+}
+.mainPag .secondPlantinum .plant button {
+  background: white;
+  color: #3e0b6e;
+}
+.mainPag .secondPlantinum .plant button:hover {
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+}
+.urgente {
+  background-color: var(--body-white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  top: 32.5rem;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3),0 6px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.urgente img {
+  width: 40px;
+  height: 40px;
+  padding: 10px 0px 0px 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta Médica Marcada</title>
+    <link rel="stylesheet" href="../../CSS/consult.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="dark"></div>
+    <div class="container">
+      <i class="bx bx-x close" id="close"></i>
+      <div class="main" style="transform: translateY(-13px)">
+        <h1>Consulta Médica Marcada</h1>
+        <div class="info">
+          <label for="name">Nome:</label>
+          <p id="name"></p>
+        </div>
+        <div class="info">
+          <label for="email">Email:</label>
+          <p id="email"></p>
+        </div>
+        <div class="info">
+          <label for="consulta">Tipo de Consulta:</label>
+          <p id="consulta"></p>
+        </div>
+        <div class="info">
+          <label for="date">Data da Consulta:</label>
+          <p id="date"></p>
+        </div>
+        <a href="#" class="btn">Cancelar Consulta</a>
+      </div>
+    </div>
+    <div class="modalInformation">
+      <p>Deseja elimar a consulta?</p>
+      <div class="buttons">
+        <button id="yes">Sim</button>
+        <button id="not">Não</button>
+      </div>
+    </div>
+    <p id="elimiando">Eliminando...</p>
+    <div class="toast">
+      <div class="toast-content">
+        <div class="iconElement">
+          <i class="bx bxs-error error"></i>
+          <div class="progress"></div>
+        </div>
+        <div class="message">
+          <p class="text tex-1">Nenhuma consulta agendada</p>
+        </div>
+        <i class="bx bx-x closeElement"></i>
+      </div>
+    </div>
+    <div class="loading">
+      <div class="carregando carregandoo"></div>
+    </div>
+    <script src="../../JS/consult.js"></script>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+h3 {
+  padding: 30px 0px 0px 30px;
+  font-weight: normal;
+}
+
+.container,
+.passwordLoading {
+  background: white;
+  width: 61.25rem;
+  height: 100vh;
+  margin: 30px auto 0px;
+}
+.error {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgb(231, 185, 185);
+  height: 37px;
+  width: 94%;
+  margin-left: 30px;
+  transform: translateY(25px);
+  color: brown;
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+  border: 0.2px solid brown;
+  display: none;
+}
+.confirmEmail h4 {
+  padding: 8px 0px 0px 20px;
+  font-size: 13px;
+  color: green;
+}
+.container p {
+  padding: 20px 0px 0px 30px;
+}
+
+
+
+.formOne input,
+.formTwo input,
+#password,
+#confirm {
+  transform: translateY(30px);
+  padding-left: 15px;
+  font-size: 15px;
+  margin-left: -15px;
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  color: black;
+}
+.formOne,
+.formTwo,
+.formTree,
+.formFour {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  margin-top: 10px;
+}
+.formOne label,
+.formTwo label,
+#phone {
+  color: black;
+  transform: translateX(30px);
+}
+.formOne .ap {
+  margin-left: -50px;
+  transform: translateY(-35px) translateX(10px);
+}
+.ckeckMark {
+  color: green;
+  margin-top: 40px;
+  transform: translateX(-35px);
+  font-size: 23px;
+}
+span {
+  color: black;
+  padding-top: 50px;
+}
+#nameLabel,
+#subName,
+#emailLabel {
+  width: 620px;
+  height: 44px;
+}
+#subName {
+  transform: translateX(-30px);
+  margin-top: 30px;
+}
+#emailLabel {
+  width: 440px;
+  margin-left: -20px;
+}
+.form {
+  margin-top: -70px;
+}
+#phone {
+  transform: translateY(33px) translateX(-24px);
+}
+#phoneLabel {
+  width: 270px;
+  height: 44px;
+  margin-left: 142px;
+  border-radius: 0px 5px 5px 0px;
+  z-index: 1;
+}
+#email {
+  height: 20px;
+  width: 50px;
+}
+.phoneNumberCountry {
+  width: 80px;
+  height: 45.6px;
+  border: 1px solid gray;
+  border-radius: 5px 0px 0px 5px;
+  margin: -17.8px 0px 0px 10px;
+  padding-left: 50px;
+  cursor: pointer;
+}
+.phoneNumberCountry img {
+  width: 30px;
+  transform: translateY(14px);
+}
+.phoneNumberCountry p {
+  color: black;
+  margin: -30px 0px 0px 15px;
+}
+.elements {
+  width: 130px;
+  margin-left: -35px;
+}
+#icon {
+  margin-left: 84px;
+  transform: translateY(-18px);
+  color: lightgray;
+}
+.formTree select,
+.countryOnly {
+  outline: none;
+  border: 1px solid gray;
+  width: 465px;
+  height: 48px;
+  transform: translateY(35px);
+  border-radius: 5px;
+  margin-left: -23px;
+  padding: 10px;
+  font-size: 15px;
+}
+.countryOnly {
+  transform: translateY(44px) translateX(-10px);
+}
+#genero,
+.date,
+p {
+  color: black;
+}
+.date {
+  width: 300px;
+  transform: translateX(7px);
+}
+#date,
+#passaport {
+  width: 430px;
+  height: 28px;
+  transform: translateY(35px);
+  margin-left: -290px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+.identific {
+  transform: translateY(-65px) translateX(29rem);
+  width: 500px;
+}
+#genero {
+  transform: translateX(30px);
+}
+#passaport {
+  margin: 0;
+  height: 25px;
+  transform: translateY(-60px);
+  margin-left: 45px;
+}
+
+.formFour .country {
+  transform: translateY(-30px);
+}
+
+.identific p {
+  transform: translateY(-60px);
+  margin-left: 13px;
+}
+#buttonElement,
+#saveElement {
+  transform: translateY(-90px) translateX(30px);
+  width: 140px;
+  height: 50px;
+  color: white;
+  background-color: rgb(138, 235, 138);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#buttonElement:hover,
+#saveElement:hover {
+  background-color: rgb(13, 109, 13);
+}
+#saveElement {
+  transform: translateY(-14px) translateX(20px);
+}
+input:focus,
+#confirm:focus,
+#password:focus {
+  border: 1px solid #3e0b6e;
+}
+.confirm {
+  color: black;
+  transform: translateX(-135px) translateY(12px);
+}
+#pass {
+  color: black;
+  margin-top: 15px;
+}
+.passwordLoading {
+  height: 250px;
+}
+.passwordLoading p {
+  color: rgb(114, 111, 111);
+  font-size: 18px;
+  transform: translateY(20px) translateX(20px);
+}
+.formPassword {
+  margin-top: 30px;
+  width: 72rem;
+  height: 150px;
+  display: flex;
+}
+#password,
+#confirm {
+  height: 48px;
+  width: 31rem;
+}
+#password {
+  transform: translateY(50px) translateX(-148px);
+}
+#confirm {
+  transform: translateX(-190px) translateY(50px);
+  width: 30rem;
+}
+#pass {
+  height: 33px;
+  width: 200px;
+  transform: translateX(23px);
+}
+#eyes img{
+  width:18px;
+  cursor: pointer;
+}
+.olhoPassword{
+  transform: translateY(66px) translateX(18.5rem);
+  z-index: 1;
+}
+.olhoConfirm{
+  transform: translateY(-8.4rem) translateX(27.5rem);
+  z-index: 1;
+}

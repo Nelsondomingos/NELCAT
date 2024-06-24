@@ -1,0 +1,300 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    overflow-y: hidden;
+}
+.comeBack {
+    background-color: #3e0b6e;
+    width: 6.6rem;
+    height: 1.8rem;
+    text-align: center;
+    padding-top: 0.8rem;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    gap: 7px;
+    position: fixed;
+    margin: -30px 0px 0px -180px;
+}
+.comeBack:hover{
+    background: lightgray;
+    color: white;
+    border: 1px solid #3e0b6e;
+    transition: 0.5s;
+}
+.comeBack img{
+    width: 20px;
+    margin-left: 13px;
+    transform: translateY(-2px);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+/* Aqui começa apenas o Log in */
+.titulo{
+    display: flex;
+}
+.titulo>a
+{
+    margin: 16px 20em;
+    font-size:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #3e0b6e;
+}
+.pag-cadast
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6fff1fa;
+    margin-top: -100px;
+}
+.adm{
+    color: #3e0b6e;
+}
+.card-cadast
+{
+    margin-top:100px;
+    margin-bottom:100px;
+    padding:40px;
+    width:500px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+.card-2-cadast
+{
+  text-align: center;  
+}
+.card-2-cadast form input
+{
+    display:block;
+}
+.card-2-cadast form .input
+{
+    width: 97.7%;
+    height: 50px;
+    font-size:17px;
+    margin-bottom:20px;
+    background:rgb(255, 252, 252) ;
+    padding-left: 10px;
+    border: 1px solid  rgb(238, 230, 230);
+    border-radius:8px;
+    outline: none;
+}
+#cadastre-se{
+    color:#3e0b6e;
+}
+.card-2-cadast form .input:focus-visible
+{
+    border: 1px solid #3e0b6e;
+    transition: all .5s;
+}
+.loading{
+    width: 30px;
+    height: 30px;
+    margin:0px 0px 0px 150px;
+}
+.carregando {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid white;
+    margin: 5px 0px 0px 20px;
+    border-top: 3px solid transparent;
+    animation: loading 1.5s linear infinite;
+    display: none;
+}
+.carregandoo{
+    margin: -2px 0px 0px -65px;
+    border: 3px solid #3e0b6e;
+    border-top: 3px solid transparent;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.button button {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-radius:5px;
+    outline: none;
+    background:#3e0b6e;
+    color: white;
+    padding-bottom:15px;
+    border-radius:5px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+} 
+.button:hover{
+    background:#31015e;
+    border-radius: 5px;
+}
+.button #specialSpan {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+.mainContainer{
+    border-radius: 10px;
+    display: flex;
+    width: 70%;
+    height: 450px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2), 0 4px 7px 0px rgba(0, 0, 0, 0.2);
+}
+label{
+    color:#3e0b6e;
+    cursor: pointer;
+}
+.labelElement{
+    margin-left: -285px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.email{
+    margin-left: -345px;
+}
+.welcome{
+    width: 50%;
+    height: 100%;
+    background: #3e0b6e;
+    border-radius: 10px 0px 0px 10px ;
+}
+.welcome h2{
+    color: white;
+    text-align: center;
+    margin: 150px 0px 0px 0px;
+}
+.welcome p{
+    color: rgb(254, 249, 249);
+    width: 250px;
+    margin-left: 75px;
+    text-align: center;
+}
+.welcome button {
+    border: none;
+    background-color: transparent;
+    margin: 20px 0px 0px 110px;
+    width: 200px;
+    height: 40px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.welcome button:hover{
+    background: #570e9c;
+}
+.creatAccount{
+    width: 50%;
+    height: 70%;
+    border-radius: 0px 10px 10px 0px ;
+    margin-top: -50px;
+}
+.creatAccount h2 {
+    text-align: center;
+    color: #3e0b6e;
+    margin-top: 90px;
+}
+.creatAccount button{
+    margin: 8px 0px 0px 68px;
+    border: none;
+    border: 1px solid #3e0b6e;
+    border-radius: 5px;
+    width: 230px;
+    height: 45px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+.creatAccount button #specialSpan {
+    color: #3e0b6e;
+    text-decoration: none;
+}
+.creatAccount button:hover{
+    background:rgb(206, 205, 205);
+}
+form{
+    display: block;
+    width: 80%;
+    margin: 10px 0px 0px 37px;
+}
+form input:focus-visible
+{
+    border: 1px solid #3e0b6e;
+    transition: all .5s;
+}
+form input{
+    width: 97.7%;
+    height: 45px;
+    font-size:17px;
+    margin-bottom:17px;
+    background:lightgray;
+    padding-left: 10px;
+    border: 1px solid  rgb(238, 230, 230);
+    border-radius:8px;
+    outline: none;
+}
+#errorLog{
+    background-color: rgb(231, 185, 185);
+    width: 97.7%;
+    height: 47px;
+    font-size:17px;
+    margin-bottom:17px;
+    padding-left: 10px;
+    border: 1px solid  rgb(238, 230, 230);
+    border-radius:8px;
+    display: none;
+}
+#errorLog #imgError{
+    width: 19px;
+    height: 19px;
+    transform: translateY(12px);
+}
+.errorImg{
+    margin-left: -330px;
+}
+
+#errorLog p{
+    color: rgb(204, 96, 96);
+    transform: translateY(-27px);
+    margin-left: 25px;
+}
+.error{
+    font-size: 14px;
+    color: red;
+    margin-top: -15px;
+    text-align: center;
+    display: none;
+    position: fixed;
+}
+#errorName{
+    display: block;
+}
+#eyes,
+#eyesConfirm{
+    position: absolute;
+    right: 20px;
+    transform: translateX(-490px);
+    background-image: url(../IMG/visiblite.png);
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    background-size: cover;
+    margin-top: -60px;
+}
+#geteyes .olho{
+    transform: translateX(-270px);
+    margin-top: -54px;
+}

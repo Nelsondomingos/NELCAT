@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assinar</title>
+    <link rel="stylesheet" href="../../CSS/Assinar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="principal">
+        <article class="primeiro_artigo">
+            <p> Este site opera com coneção segura!</p>
+        </article>
+        <div class="primeira">
+            <div class="div1">
+                <article class="article1">
+                    <h2 class="h2"><span class="um"> 1  </span>Detalhes de compra</h2>
+                </article>
+                <article class="article2">
+                    <h2 class="h2 contratante"><span class="um"> 2 </span>Dados do contratante</h2>
+                </article>
+                <figure class="fg1">
+                    <h1 class="h1"> <a href="Planos.html"> NELCAT  </a> </h1>
+                </figure>
+            </div>
+            <div class="div2">
+                <article class="article3">
+                    <h2 class="h22"><span class="tres">3</span> Dados de pagamento</h2>
+                </article>
+            </div>
+            <div class="div3">
+                <div class="formularios">
+                    <span class="span">Forma de pagamento</span> <br>
+                    <select>
+                        <option> Cartão de crédito </option>
+                        <option> Paypay </option>
+                        <option> Cartão de Visa </option>
+                    </select>
+                    <div class="formularioss">
+                        <label for="cardNumber" class="span"> Número do cartão *</label> <br>
+                        <input type="tel" placeholder="000 000 000 000" id="cardNumber"> <br>
+                        <span class="error" id="valueCard">Preecha este campo e com apenas 12 dígitos</span>
+                        <div class="form">
+                            <label for="cardName" class="span">Nome no cartão *</label> <br>
+                            <input id="cardName" type="text" placeholder="Ex.Nelson Alberto Domingos"> <br>
+                            <span class="error" id="name">Preecha este campo e com o seu nome completo </span>
+                        </div>
+                        <div class="formul">
+                            <label for="password"> Pin *</label> <br>
+                            <input id="password" class="inputt" type="password" max="4" placeholder="0000"> <br>
+                            <span class="error" id="pinUser">Preecha este campo e com apenas 4 dígitos </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="plano">
+                    <div class="plantinum">
+                        <p class="p">Plantinum Induvidual</p>
+                        <div class="pre">
+                            <h1>37</h1>
+                            <p class="kzs">
+                                000 kzs
+                            </p>
+                        </div>
+                       <div class="mes">
+                            <span>Por mês</span>
+                       </div>
+                    </div>
+                </div>
+                <div class="opcoes">
+                    <div class="voltar">
+                        <a href="../HTML/Planos.html"><button>Voltar</button></a>
+                    </div>
+                    <div class="contratar" onclick="validation()">
+                       <button id="contract">
+                            <span id="spnNone"> Quero contratar </span>
+                       </button>
+                       <div class="loading">
+                            <div class="carregando" ></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="paragrafo">
+                    <p>
+                        Clicando no botão acima, você concorda com
+                        os nossos <span>Termos de serviços.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="confirm" id="userInter">
+            <div class="confirmInformation">
+                <figure>
+                    <img  src="../../IMG/check-mark.png" alt="confirm">
+                </figure>
+                <p>Contrato feito com sucesso<br> Sucesso </p>
+                <a href="../Contrado/index.html"> <button> Continuar </button> </a>
+            </div>
+        </div>
+    </main>
+    <script src="../../JS/validarContrato.js"></script>
+</body>
+</html>

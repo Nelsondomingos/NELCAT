@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Agora</title>
+    <link rel="stylesheet" href="../../CSS/Consultar-agora.css">
+    <link rel="stylesheet" href="../../CSS/Just_scrollbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="div1">
+            <article>
+                <a href="index.html"> <h1> Nelcat </h1></a>
+                <p id="calling">A ligar...</p>
+                <div class="sendMessage" style="background-color: white; transform: translateX(-450px); margin-top:-190px; height: 480px; display: none;">
+                    <div class="message">
+                        <Span> Mensagem na chamada </Span>
+                        <p> X </p>
+                    </div>
+                    <div class="permit">
+                        <span>Permitir que todos enviem mensagens</span>
+                        <div class="aboutMessage">
+                            <span>
+                                A menos que estejam afixadas, as mensagens só <br>
+                                podem ser vistas pelos participantes da chamada quando são enviados. 
+                                Todas as mensagens são eliminadas quando a chamada termina.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="inptButton">
+                        <input type="text">
+                    </div>
+                </div>
+            </article>
+          
+            <figure>
+                <video id="videoElement" autoplay></video>
+            </figure>
+        </div> 
+        <div class="menus">
+            <div class="imagens">
+                <div id="first">
+                    <input type="checkbox" id="botao">
+                    <div class="just_checked">
+                        <label for="botao">
+                            <img id="img1" src="../../IMG/Altifalante.png"     title="Altifalante" alt="" style="background-color: tra;">  
+                        </label>
+                    </div>
+                </div>
+                <div id="first">
+                    <input class="botao" type="checkbox" id="button">
+                    <div class="just_checke">
+                        <label for="button">
+                            <img id="img"  src="../../IMG/message_dots_icon_151200.png" title="Mensagem" alt=""> 
+                        </label>
+                    </div>
+                    <div id="send_message">
+                        <textarea id="textarea" placeholder="Mensagem"></textarea>
+                        <a href="Consultar_agora.html"><img id="send" src="../../IMG/Send.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="first">
+                    <input type="checkbox" id="btn">
+                    <div class="just_check">
+                        <label for="btn">
+                            <img id="img" src="../../IMG/Microfone.png" title="Mudo" alt=""> 
+                        </label>
+                    </div>
+                </div>
+                <div id="first">
+                    <figure>
+                        <a href="index.html" class="recusar"><img id="img" title="Terminar"  src="../../IMG/Recusar.jpg" alt=""></a>  
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../../JS/TalkToDoctorNow.js"></script>
+</body>
+</html>

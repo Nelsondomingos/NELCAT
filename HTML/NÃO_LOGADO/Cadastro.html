@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../CSS/CadastroLogin.css" />
+    <link rel="stylesheet" href="../../CSS/CSS/Just_scrollbar.css" />
+    <title>Cadastramento</title>
+  </head>
+  <body>
+    <main>
+      <div class="mainContainer">
+        <a href="../NÃO_LOGADO/index.html">
+          <div class="comeBack">
+            <img src="../../IMG/ComeBack.png" alt="" />
+            <a href="../NÃO_LOGADO/index.html"> Voltar </a>
+          </div>
+        </a>
+        <div class="welcome">
+          <h2>Welcome Back</h2>
+          <p>To keep connected with us please login with pernonal info</p>
+          <div>
+            <a href="../NÃO_LOGADO/loginUp.html">
+              <button>SIGN IN</button>
+            </a>
+          </div>
+        </div>
+        <div class="creatAccount">
+          <h2>Creat Account</h2>
+          <form id="myForm">
+            <label for="nameInput">Nome</label>
+            <input
+              type="text"
+              id="nameInput"
+              placeholder="ex.Nelson Domingos"
+            />
+            <p class="error" id="errorName"></p>
+
+            <label for="emailInput">Email</label>
+            <input
+              type="email"
+              name=""
+              class="input"
+              id="emailInput"
+              placeholder="Email"
+              required
+            />
+            <p class="error" id="errorEmail">
+              Preencha corretamente este campo
+            </p>
+
+            <section id="geteyes">
+              <label for="password">Senha:</label>
+              <input
+                type="password"
+                name=""
+                class="inputPassword"
+                id="password"
+                placeholder="Palavra-passe"
+                required
+              />
+              <p class="error password">
+                Preencha este campo, mínimo 6 dígitos
+              </p>
+              <div id="eyes" class="olho" onclick="showPassWord ()"></div>
+
+              <div id="errorLog">
+                <img id="imgError" src="../../IMG/ErrorElement.png" alt="" />
+                <p>
+                  Já existe um usário com o e-mail parecido
+                  <span class="dashicons dashicons-buddicons-replies"></span>.
+                </p>
+              </div>
+            </section>
+            <div>
+              <a href="" id="signUp">
+                <button id="signUp">
+                  <p id="specialSpan">SIGN UP</p>
+                  <div class="loading">
+                    <div
+                      class="carregando carregandoo"
+                      onclick="validarInputs()"
+                    ></div>
+                  </div>
+                </button>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="confirm">
+        <div class="confirmInformation">
+          <figure>
+            <img src="../../IMG/check-mark.png" alt="confirm" />
+          </figure>
+          <p>
+            Cadastro realizado com <br />
+            Sucesso
+          </p>
+          <a href="../LOGADO/index.html"> <button>Continuar</button> </a>
+        </div>
+      </div>
+    </main>
+    <script src="../../JS/ValidationCadastro.js"></script>
+    <script src="../../JS/ShowPassword.js"></script>
+  </body>
+</html>

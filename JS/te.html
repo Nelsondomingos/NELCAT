@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar Dados</title>
+</head>
+<body>
+
+<h2>Dados</h2>
+<p>Nome: <span id="nome"></span></p>
+<p>Email: <span id="email"></span></p>
+
+<a href=""></a>
+
+<button onclick="editarDados()">Editar Dados</button>
+
+<script>
+// Dados predefinidos
+var dados = {
+    nome: "Nelson",
+    email: "nelsondomingos@gmail.com"
+};
+
+// Função para exibir os dados
+function exibirDados() {
+    document.getElementById("nome").textContent = dados.nome;
+    document.getElementById("email").textContent = dados.email;
+}
+
+
+
+
+
+// Função para editar os dados
+function editarDados() {
+    var novoNome = prompt("Digite o novo nome:", dados.nome);
+    var novoEmail = prompt("Digite o novo email:", dados.email);
+
+    // Se o usuário pressionar "Cancelar", os dados permanecem os mesmos
+    if (novoNome !== null && novoEmail !== null) {
+        // Atualiza os dados
+        dados.nome = novoNome;
+        dados.email = novoEmail;
+
+        // Atualiza os dados na página
+        exibirDados();
+
+        // Armazena os dados atualizados no localStorage
+        localStorage.setItem("dadosUsuario", JSON.stringify(dados));
+    }
+}
+
+// Verifica se existem dados armazenados no localStorage
+if (localStorage.getItem("dadosUsuario")) {
+    // Se existirem, carrega os dados do localStorage
+    dados = JSON.parse(localStorage.getItem("dadosUsuario"));
+    exibirDados();
+} else {
+    // Se não existirem, exibe os dados predefinidos
+    exibirDados();
+}
+</script>
+
+</body>
+</html>

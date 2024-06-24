@@ -1,0 +1,157 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+/* Início do cabeçalho */
+.cabecalho{
+    width: 100rem;
+    height: 5.625rem;
+    margin-top: 46px;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1), 0 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.cabecalho .justLogoAndNelcat{
+    width: 10.625rem;
+    display: flex;
+    margin-left: 1.6rem;
+}
+.Nelcat{
+    font-size: 17px;
+    padding: -1rem 17px 0px 0px;
+    font-family: 'Oswald', sans-serif;
+}
+.cabecalho .justLogoAndNelcat{
+    margin-left: 35px;
+}
+.cabecalho .justLogoAndNelcat img{
+    width: 2rem;
+    height: 2rem;
+    margin: 31px 0px 0px -10px;
+}
+.cabecalho .allAboutMenu {
+    margin-top: -127px;
+}
+.cabecalho .allAboutMenu .justList {
+    width: 37.5;
+    height: 7.31rem;
+    list-style: none;
+    margin: 10px 0px 0px 25em ;
+    display: flex;
+}
+ 
+.cabecalho .justList .link li{
+    padding-left: 17px;
+    color:#3e0b6e;
+    font-size: 24px;
+    margin-left: 40px;
+    position: relative;
+ }
+ .cabecalho .justList .link li::after {
+    content: ' ';
+    width: 0%;
+    height: 3px;
+    background-color: #3e0b6e;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+ }
+.cabecalho .justList .link:hover ::after{
+    width: 97%;
+    transition: 0.5s ease-in-out;
+}
+.link{
+    text-decoration: none;
+    padding-top: 63px;
+}
+
+/* Este é apenas a parte do Agendar */
+.cabecalho .toSchedule{
+    margin: 8px 0px  0px 1020px;
+    width: 210px;
+    height: 29px;
+    padding: 3px 0px 0px 20px;
+    border-radius: 20px;
+}
+.cabecalho .toSchedule:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+  .cabecalho .toSchedule label{
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+ .cabecalho .toSchedule #check{
+    display: none;
+}
+
+ #ContactUs .dropdown {
+    margin-top: -50px;
+    display: none;
+    height:0%;
+    position: absolute;
+}
+#ContactUs:focus-within .dropdown {
+    height: 100%;
+    display:block;
+}
+.dropdown a:hover {
+    border: 1px solid white;
+    background:#3e0b6e;
+    color:white;
+    transition: all 0.4s;
+}
+.dropdown a {
+    display:block;
+    text-decoration: none;
+    color:black;
+    background:white;
+    padding:8px;
+    text-align:center;
+    border: 1px solid black;
+    border-radius:6px;
+    text-align: center;
+    margin-left: 110px;
+}
+
+#ContactUs{
+    margin: 12px 0px 0px 75em;
+    cursor: pointer;
+
+}
+#ContactUs .dropdown{
+    margin: 10px 0px 0px -20px;
+}
+#ContactUs ul li {
+    list-style: none;
+    margin: -10px 0px 0px -30px;
+    color: #3e0b6e;
+    font-size: 22px;
+}
+.imgAndLogin {
+    margin-left: -90px;
+    display: flex;
+}
+.imgFirst{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin: 8px 0px 0px -80px;
+}
+.loginElement #login{
+    border: 1px solid #3e0b6e;
+    padding: 5px 0px ;
+    border-radius: 5px; 
+    width: 120px;
+    height: 30px; 
+    text-align: center;
+    margin: -90px 0px 0px 35px; 
+    background-color: transparent; 
+}
+
+.loginElement #login:hover{
+    background-color: #3e0b6e;
+    color: white;
+}

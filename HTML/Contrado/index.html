@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../CSS/CabeLog.css">
+    <link rel="stylesheet" href="../../CSS/Style.css">
+    <link rel="stylesheet" href="../../CSS/Rodape.css">
+    <link rel="stylesheet" href="../../CSS/Just_scrollbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>hospital Nelcat</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalhMain">
+            <div class="justLogoAndNelcat">
+                <a href="./index.html" class="Nelcat nelcat"> <h1>Nelcat</h1> </a>
+            </div>
+            <div class="allAboutMenu">
+                <ul class="justList">
+                    <a class="link" href="./index.html"> <li>Inicio</li>  </a>
+                    <a class="link" href="./Planos.html"> <li>Planos e preços</li></a>
+                    <a class="link" href="#testimony"><li>Depoimentos</li></a>  
+                </ul> 
+                <div class="toSchedule">
+                    <label for="botao"> Agendar </label>
+                </div>
+                <div class="user">
+                    <label for="userImg">
+                        <div class="userLog">
+                        </div>
+                        <input type="checkbox" name="" id="userImg">
+                    </label>
+                    <span id="user">  </span>
+                    <div class="dropd">
+                        <div class="informationAboutPerfile">
+                            <ul>
+                                <li><a href="../LOGADO/Perfile.html" class="move">Perfil</a></li> <br>
+                                <li><a href="../LOGADO/consultAgend.html" class="move"> Consultas </a></li> <br>
+                                <li><a href="../NÃO_LOGADO/index.html" id="logOut" onclick="logOut()">Saír </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fundo"> 
+                    <div class="cadastro">
+                        <i class='bx bx-x closeElement' ></i>
+                        <div class="cadastr">
+                            <h1 id="titleConsulta">Marcar Consulta</h1>
+                            <form id="consultationForm" >
+                                <label id="labelElement" for="name">Nome:</label>
+                                <input type="text" id="name" class="nameInpt" placeholder="Ex.Nelson"><br>
+                                
+                                <div class="requered">
+                                    <span id="especialSpan"> </span>
+                                </div>
+    
+                                <label id="labelElement"  for="email">E-mail:</label>
+                                <input type="email" id="email" class="emailInpt" placeholder="nelsondomingos412@gmail.com" ><br>
+                                <div class="requered">
+                                    <span id="especialSpanEmail"> </span>
+                                </div>
+                                <label id="labelElement"  for="consult">Tipo de Consulta:</label>
+                                <select id="consult" class="consultType" placeholder="Ex:.Cardiologia"> <br>
+                                    <option> Escolha uma consulta </option>
+                                    <option> Cardiologia </option>
+                                    <option> Dermatologia </option>
+                                    <option>Endocrinologia e Metabologia</option>
+                                    <option>Geriatria</option>
+                                    <option> Ginocologia e Obstetrícia</option>
+                                    <option>Hematologia e Hemoterapia</option>
+                                    <option>Infectologia</option>
+                                    <option>Nefrologia</option>
+                                    <option>Neurologia</option>
+                                    <option>Neurologia Pediátrica</option>
+                                    <option>Oftamologia</option>
+                                    <option>Ortopedia e Traumatologia</option>
+                                    <option>Otorrinolaringogia</option>
+                                    <option>Pediatria</option>
+                                    <option>Pneumologia</option>
+                                    <option>Psicóloga Generalista</option>
+                                    <option>Psicóloga Generalista Adulto e Infantil</option>
+                                    <option>Psicóloga Generalista Infantil</option>
+                                    <option>Psiquiatra</option>
+                                    <option>Psiquiatra Adulto e Infantil</option>
+                                    <option>Urologia</option>
+                                </select>
+                                <div class="requered">
+                                    <span id="especialSpanType"> </span>
+                                </div>
+    
+                                <label id="labelElement"  for="date">Data da Consulta:</label>
+                                <input type="date" id="date" class="dateInpt"><br>
+                                <div class="requered">
+                                    <span id="especialSpanDate"> </span>
+                                </div>
+                                <button id="buttonElementAgend" type="submit" onclick="validarFormulario ()">Agendar Consulta</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="darkModeOverlay"> </div>
+                </div> 
+            </div>
+            <input type="checkbox" name="" id="botao">
+        </div>
+    </header>
+    <div class="toast">
+        <div class="toast-content">
+            <div class="iconElement">
+                <i class="bx bxs-check-circle circle"> </i> 
+                <div class="progress"></div>
+            </div>
+            <div class="message">
+                <p class="text tex-1 text">Usuário logado com sucesso.</p>
+            </div>
+            <i class='bx bx-x close'></i>
+        </div>
+    </div>
+    <div id="toast">
+        <div class="toast-content">
+            <div class="iconElement">
+                <i class='bx bxs-error errorElement'></i>
+                <div class="progress"></div>
+            </div>
+            <div class="message">
+                <p class="text tex-1 text">Já tens uma consulta marcada.</p>
+            </div>
+            <i class='bx bx-x close' id="closeElementTwo"></i>
+        </div>
+    </div>
+    <main class="mainPag">
+        <section class="sectionOne">
+            <h1>TELEMEDICINA</h1>
+            <p>
+                Com humanização e Inteligência
+                tecnológica para cuidar mais e 
+                melhor de você. 
+            </p>
+            <div class="loading">
+                <div class="carregando carregandoo" onclick="validarInputs()"></div>
+            </div> 
+            <a href="Consultar_agora.html">
+                <div class="urgente" title="Urgência">
+                    <img src="../../IMG/urgent.png" alt="">
+                </div>
+            </a>
+        </section> 
+        <section class="sectionTwo">
+            <div class="firsDivToSectionTwo">
+                <div class="minContainer">
+                    <figure>
+                        <img src="../../IMG/undraw_social_sharing_re_pvmr.svg" alt="...">
+                    </figure>
+                    <p>
+                        Consultas onde e quando 
+                        quiser porque nós estamos
+                        disponiveis 24/24 
+                    </p>
+                </div> 
+                <div class="minContainer">
+                    <figure>
+                        <img  src="../../IMG/undraw_video_call_re_4p26.svg" alt="">
+                    </figure>
+                    <p>
+                        Consultas por vídeo com 
+                        médicos de mais de 25 
+                        especialidades.
+                    </p>
+                </div>
+                <div class="minContainer">
+                    <figure>
+                        <img src="../../IMG/undraw_drone_surveillance_kjjg.svg" width="100" alt="...">
+                    </figure>
+                    <p>
+                        Telepsicologia para o 
+                        melhor cuidado da saúde
+                        emocional.  
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="sectionThree">
+            <div class="firsDivToSectionThree">
+                <h1> CONSULTAS  MÉDICAS  <span class="unlimited"> ILIMITADAS </span> 24h POR DIA </h1>
+                <div class="ours_information">
+                    <span class="informationOne">ATRAVÉS DA TELEMEDICINA</span> <br>
+                    <span class="informationTwo"> "Consulte nossos planos"</span>
+                </div>
+                <div class="btn">
+                    <a href="./Planos.html"> <button>Consultar Agora</button></a>
+                </div>
+            </div>
+            <div class="imgTypeUndraw">
+                <figure>
+                    <img src="../../IMG/undraw_medicine_b-1-ol (1).svg" alt="erro"> 
+                </figure>
+            </div>
+        </section>
+        <section class="ourService">
+            <div class="firstDivService">
+                <h1>
+                    Nossas especialidades
+                </h1>
+                <span>Veja as especialidades disponiblizadas
+                    para você consultar um mêdico especialista.
+                </span>
+            </div>
+            <div class="containers">
+                <div class="container">
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Cardiologia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Dermatologia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Endocrinologia e Metabologia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Geriatria
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Ginocologia e Obstetrícia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Hematologia e Hemoterapia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Infectologia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Médico de família
+                        </p>
+                    </label>
+                </div>
+                <div class="container">
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Nefrologia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Neurologia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Neurologia Pediátrica
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Oftamologia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Ortopedia e Traumatologia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Otorrinolaringogia
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Pediatria
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Pneumologia
+                        </p>
+                    </label>
+                </div>
+                <div class="container">
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Psicóloga Generalista
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Psicóloga Generalista Adulto e Infantil
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Psicóloga Generalista Infantil
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Psiquiatra
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Psiquiatra Adulto e Infantil
+                        </p>
+                    </label>
+                    <label>
+                        <p>
+                            <img src="../../IMG/check-mark.png" width="13px" alt="">
+                            Urologia
+                        </p>
+                    </label>
+                    <label>
+                </div>
+            </div>
+        </section>
+        <section id="testimony">
+            <h1>Depoimentos</h1>
+            <div class="comment">
+                <div class="justComment">
+                    <figure>
+                        <img src="../../IMG/foto1.jpg" alt="#">
+                    </figure>
+                    <div class="theWords">
+                        <h3>James</h3>
+                        <p>
+                            Fui atendido Imediatamente e 
+                            com toda atenção que eu como cliente  <br>
+                            precisava praquele momento. 
+                        </p>
+                    </div>
+                </div>
+                <div class="justComment">
+                    <figure>
+                        <img src="../../IMG/foto3.jpg" alt="#">
+                    </figure>
+                    <div class="theWords">
+                        <h3>Osvaldo</h3>
+                        <p>
+                            Fui atendido imediatamente e 
+                            com toda atenção que eu como cliente  <br>
+                            precisava praquele momento. 
+                        </p>
+                    </div>
+                </div>
+                <div class="justComment">
+                    <figure>
+                        <img src="../../IMG/foto4.jpg" alt="#">
+                    </figure>
+                    <div class="theWords">
+                        <h3>Santos</h3>
+                        <p>
+                            No começo achei que seria
+                            complicado um médico me 
+                            diagnosticar remotamente
+                            Mas fui surpreendido.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="rodape">
+        <div class="theMainDivs">
+            <div class="theFirstDivTodRodape">
+                <div class="getingTouch">
+                    <h2> Entrando em contacto </h2>
+                    <div class="firstBordToRodape">
+                        <div class="scrollX">
+                            <label id="scrollElement"> </label>
+                        </div>
+                    </div>
+                    <p>Preencha o Formulário abaixo para nos enviar um emael e entraremos em contacto com você.</p>
+                </div>
+                <div class="spaceToSendMessageAndInpts">
+                    <form class="twoInpts">
+                        <input class="inptOne" type="name" placeholder="Nome">
+                        <input class="inptTwo" type="email" placeholder="Email: ex.Nelson@gmail.com">
+                    </form>
+                    <textarea class="textarea" name="textarea" placeholder="Mensagem"></textarea>
+                    <p>Textarea  não pode estar vazio</p>
+                    <div class="sendMessage">
+                        <button class="inptToSendMessage">Enviar Mensagem</button>
+                    </div>
+                </div>
+            </div>
+            <div class="theSecondDivTodRodape">
+                <h3> Sobre contacto </h3>
+                <div class="firstBordToRodape">
+                    <div class=" scrollXX">
+                        <label id="scrollElement"> </label>
+                    </div>
+                </div>
+                <div class="OurAdress">
+                    <div>
+                        <h3 class="adressPhoneEmail">Endereço </h3>
+                        <span class="location">Morro Da Luz St <br> Mutamba</span>
+                    </div>
+                    <div>
+                        <h3 class="adressPhoneEmail phone">Telefone</h3>
+                        <span class="phoneNumber">939 162 258</span>
+                    </div>
+                    <div>
+                        <h3 class="adressPhoneEmail email">Email</h3>
+                        <span class="NelcateGmail">Nelcat@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" scrollXX" id="scrollXX">
+            <label id="scrollElement"> </label>
+        </div>
+    </footer>
+    <script src="../../JS/Script.js"></script>
+</body>
+</html>

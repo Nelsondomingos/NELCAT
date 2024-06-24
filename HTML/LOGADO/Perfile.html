@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../CSS/perfile.css"/>
+    <link rel="stylesheet" href="../../CSS/CabeLog.css"/>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+    <title>Perfil info</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalhMain">
+        <div class="justLogoAndNelcat">
+          <a href="./index.html" class="Nelcat nelcat"> <h1>Nelcat</h1> </a>
+        </div>
+        <div class="allAboutMenu">
+          <ul class="justList">
+            <a class="link linkInicio" href="./index.html"> <li>Inicio</li> </a>
+            <a class="link linkPlanos" href="./Planos.html"> <li>Planos e preços</li></a>
+            <a class="link linkDepoimentos" href="#testimony"><li>Depoimentos</li></a>
+          </ul>
+          <div class="comeToIndexPag">
+            <a href="index.html">
+              <i class="bx bx-right-arrow-alt back"> </i>
+            </a>
+          </div>
+        </div>
+        <input type="checkbox" name="" id="botao" />
+      </div>
+    </header>
+    <div class="container">
+      <div class="error">
+        <i class="bx bxs-error-circle errorIcone">
+          Atenção: campos obrigatório por preencher!</i>
+      </div>
+      <h3>Perfil</h3>
+      <form class="formOne">
+        <label for="nameLabel"> Nome </label>
+        <input type="text" id="nameLabel" placeholder="Nelson" />
+        <i class="bx bx-check ckeckMark"></i>
+
+        <p class="ap">Apelido</p>
+        <input type="text" id="subName" placeholder="Domingos" />
+      </form>
+      <form class="formTwo">
+        <label for="emailLabel" id="email"> E-mail </label>
+        <input type="email" id="emailLabel" placeholder="nelsondomingos@gmail.com"/>
+        <div class="form">
+          <p id="phone">Telefone</p>
+          <input type="text" id="phoneLabel" placeholder="939 162 258" max="9" style="width: 300px;" />
+          <div class="phoneNumberCountry">
+            <div class="elements" >
+              <img src="../../IMG/Angola.png" alt="" />
+              <p>+244</p>
+              <i class="bx bxs-down-arrow" id="icon"></i>
+            </div>
+          </div>
+        </div>
+      </form>
+      <form class="formTree">
+        <label id="genero"> Género </label>
+        <select id="generoUser"> 
+          <option>Masculino</option>
+          <option>Femenino</option>
+        </select>
+        <label for="date" class="date"> Data de Nascimento </label>
+        <input type="date" id="date" />
+      </form>
+      <form class="formFour">
+        <p class="country">País</p>
+        <select class="countryOnly">
+          <option>Angola</option>
+        </select>
+      </form>
+      <div class="identific">
+        <p class="identification">BI ou Passaporte</p>
+        <input type="number" id="passaport" placeholder="ex:.024411842LA051" />
+      </div>
+      <button id="buttonElement"><h4>Guardar</h4></button>
+    </div>
+
+    <div class="passwordLoading">
+      <p>Insira a nova palavra passe</p>
+      <form class="formPassword">
+        <label for="password" id="pass"> Palavra passe </label>
+        <input type="password" id="password" placeholder="Palavra-passe" />
+
+        <div id="eyes" class="olhoPassword">
+           <img src="../../IMG/olho aberto).png" alt="" id="olhoConfirmPassword">
+        </div>      
+
+        <label for="confirm" class="confirm"> Confirmar </label>
+        <input type="password" id="confirm" placeholder="Confirmar" />
+
+      </form>
+      <form>
+        <button id="saveElement">Guardar</button>
+      </form>
+
+      <div id="eyes" class="olhoConfirm" > 
+        <img src="../../IMG/olho aberto).png" alt="" id="olhoPassword">
+      </div>
+
+    </div>
+    <script src="../../JS/PerfileScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Planos e preços </title>
+    <link rel="stylesheet" href="../../CSS/CabeLog.css">
+    <link rel="stylesheet" href="../../CSS/Planos e preços.css">
+    <link rel="stylesheet" href="../../CSS/Just_scrollbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalhMain">
+            <div class="justLogoAndNelcat">
+                <a href="./index.html" class="Nelcat nelcat"> <h1>Nelcat</h1> </a>
+            </div>
+            <div class="allAboutMenu">
+                <ul class="justList">
+                    <a class="link" href="./index.html"> <li>Inicio</li>  </a>
+                    <a class="link" href="./Planos.html"> <li>Planos e preços</li></a>
+                    <a class="link" href="#testimony"><li>Depoimentos</li></a>  
+                </ul> 
+                <div class="toSchedule">
+                    <label for="botao"> Agendar </label>
+                </div>
+                <div class="user">
+                    <label for="userImg">
+                        <div class="userLog">
+                        </div>
+                        <input type="checkbox" name="" id="userImg">
+                    </label>
+                    <span id="user">  </span>
+                    <div class="dropd">
+                        <div class="informationAboutPerfile">
+                            <ul>
+                                <li><a href="./Perfile.html">Perfil</a></li> <br>
+                                <li><a href="./consultAgend.html">Minhas consultas</a></li> <br>
+                                <li><a href="../NÃO_LOGADO/index.html" id="logOut" onclick="logOut()">Saír</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="fundo"> 
+                    <div class="cadastro">
+                        <s id="close" onclick="closeCard()">x</s>
+                        <div class="cadastr">
+                            <h1 id="titleConsulta">Marcar Consulta</h1>
+                            <form id="consultationForm" >
+                                <label id="labelElement" for="name">Nome:</label>
+                                <input type="text" id="name" class="nameInpt" placeholder="Ex.Nelson"><br>
+                                
+                                <div class="requered">
+                                    <span id="especialSpan"> </span>
+                                </div>
+    
+                                <label id="labelElement"  for="email">E-mail:</label>
+                                <input type="email" id="email" class="emailInpt" placeholder="nelsondomingos412@gmail.com" ><br>
+                                <div class="requered">
+                                    <span id="especialSpanEmail"> </span>
+                                </div>
+    
+                                <label id="labelElement"  for="consult">Tipo de Consulta:</label>
+                                <input type="text" id="consult" class="consultType" placeholder="Ex:.Cardiologia"><br>
+                                <div class="requered">
+                                    <span id="especialSpanType"> </span>
+                                </div>
+    
+                                <label id="labelElement"  for="date">Data da Consulta:</label>
+                                <input type="date" id="date" class="dateInpt"><br>
+                                <div class="requered">
+                                    <span id="especialSpanDate"> </span>
+                                </div>
+                                <button id="buttonElementAgend" type="submit" onclick="validarFormulario ()">Agendar Consulta</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="darkModeOverlay"> </div>
+                </div> 
+            </div>
+            <input type="checkbox" name="" id="botao">
+        </div>
+    </header>
+    <div class="toast">
+        <div class="toast-content">
+            <div class="iconElement">
+                <i class="bx bxs-check-circle circle"> </i> 
+                <div class="progress"></div>
+            </div>
+            <div class="message">
+                <p class="text tex-1 text">Usuário logado com sucesso.</p>
+            </div>
+            <i class='bx bx-x close'></i>
+        </div>
+    </div>
+    <div id="toast">
+        <div class="toast-content">
+            <div class="iconElement">
+                <i class='bx bxs-error errorElement'></i>
+                <div class="progress"></div>
+            </div>
+            <div class="message">
+                <p class="text tex-1 text">Já tens uma consulta marcada.</p>
+            </div>
+            <i class='bx bx-x close' id="closeElementTwo"></i>
+        </div>
+    </div>
+    <main class="mainPag">
+        <div class="plans">
+            <h1>PLANOS E PREÇOS</h1>
+        </div>
+        <section class="mainSection">
+            <div class="informatioAboutService">
+                <p>
+                    O contato entre médico e paciente ficou mais simples e prático.Nossa 
+                    Tecnologia está preparada para conectar médicos e pacientes de forma
+                    simples e segura,unindo inovação e experiência de mais de 10 anos de 
+                    <p class="services">
+                        serviços de saúde à distância.
+                    </p>
+                </p>             
+            </div>
+            <div  class="plantinum">
+                <div class="plant">
+                    <p class="abouOurPlan">
+                        Nelcat plantinum Individual 
+                    </p>
+                    <div class="prices">
+                        <h1>  37 </h1>
+                        <p class="currency">
+                            KZS
+                        </p>
+                        <p class="month">
+                            /mês
+                        </p>
+                        <div>
+                            <button id="plantinumElement" onclick="checkekContrato ()">Assinar Agora!</button>
+                       </div>
+                       <span id="errorContrato">Já tens um contrato feito</span>
+                    </div>  
+                </div>
+                <div class="othersInformationAboutNelcat">
+                    <p>
+                        Telemedicina (Consultas Ilimitadas )
+                    </p>
+                    <span>
+                        Clínico geral + 25 especialidades
+                        <hr class="hrr">
+                    </span>
+                </div>
+                <div class="ourAdvantage">
+                    <p>
+                        programa de Descontos 
+                        <hr class="hr" >
+                    </p>
+                </div>
+                <div class="ourAdvantage">
+                    <p>
+                        A.F (Assistência funeral)
+                    </p>
+                    <hr class="hr">
+                </div>
+                <div class="ourAdvantage">
+                    <p>
+                        Sorteiro Mensal de 10.000.00 KZS
+                    </p>
+                    <hr class="hr">
+                </div>
+                <div class="ourAdvantage">
+                    <p>
+                        Seguro de vida 
+                    </p>
+                    <hr class="hr">
+                </div>    
+            </div>
+            <section  class="secondPlantinum">
+                <div class="plantinum">
+                    <div class="plant">
+                        <p class="abouOurPlan">
+                            Nelcat Gold family 
+                        </p>
+                        <div class="prices" id="otherPrice"> 
+                            <h1 class="value"> 70 </h1>
+                            <p class="currency" id="otherCurrency">
+                                KZS
+                            </p>
+                            <p class="month" id="otherColor">
+                                /mês
+                            </p>
+                            <div class="sucedido">
+                                <img src="../../IMG/check-mark.png" alt="">
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <div class="othersInformationAboutNelcat">
+                    <p>
+                        Titular + de 3 dependentes
+                        <hr class="hr">
+                    </p>
+                    <p>
+                        Telemedicina (Consultas Ilimitadas)
+                    </p>
+                    <p>
+                        Clínico geral + de 25 especialidades
+                        <hr class="hr">
+                    </p>
+                </div>   
+                <div class="moreInformation">
+                    <div class="ourAdvantage">
+                        <p>
+                            programa de Descontos 
+                            <hr class="hr">
+                        </p>
+                    </div>
+                    <div class="ourAdvantage">
+                        <p>
+                            A.F (Assistência funeral)
+                            <hr class="hr">
+                        </p>
+                    </div>
+                    <div class="ourAdvantage">
+                    <p>
+                        Sorteiro Mensal de 10.000.00 KZS
+                        <hr class="hr">
+                    </p>
+                </div>
+                <div id="ourAdvantage">
+                    <p>
+                        Seguro de vida 
+                        <hr class="hr">
+                    </p>
+                </div>    
+            </section>
+        </sessao>
+        <a href="Consultar_agora.html">
+            <div class="urgente" title="Urgência">
+                <img src="../../IMG/urgent.png" alt="">
+            </div>
+        </a>
+    </main> 
+    <script src="../../JS/Script.js"></script>
+</body>
+</html>

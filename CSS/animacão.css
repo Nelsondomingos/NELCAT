@@ -1,0 +1,67 @@
+@keyframes bouncedireito {
+	0% {
+        opacity:0;
+		transform: translateX(30px);
+	}
+	
+	20% {
+		opacity: 1;
+		transform: translateX(-0px);
+	}
+	
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.bouncedireito
+{
+    animation-name:bouncedireito;
+    animation-duration:4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0; scale:0.76;}
+	100% {opacity: 1; scale:1;}
+}
+.fadeIn
+{
+    animation-name:fadeIn;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes subindo {
+	0% {
+		opacity: 0;
+		transform: translateY(40px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.subindo
+{
+    animation-name:subindo;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes descendo {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.descendo
+{
+    animation-name:descendo;
+    animation-duration:2s;
+    animation-timing-function: ease-in-out;
+}

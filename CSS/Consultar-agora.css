@@ -1,0 +1,153 @@
+*{
+    outline: none;
+    text-decoration:none ;
+    margin: 0px;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color:lightgray;
+    overflow-y: hidden; 
+}
+video {
+    border: 3px solid #400775;
+    cursor: pointer;
+}
+.div1 {
+    width: 100%;
+    height: 580px;
+    margin-top: -45px;
+}
+.div1 article{
+    width: 300px;
+    height: 3em;
+    text-align: center;
+    margin-left: 33em;
+    transform: translateY(170px);
+}
+.div1 article p{
+    text-align: center;
+    padding-top: 20px;
+    color: black;
+} 
+h1{
+    color:#400775;
+    font-size: 44px;
+}
+#videoElement{
+    width: 200px;
+    height: 150px;
+    margin: 20rem 0px 0px 70em;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.div1 #img{
+    width: 30px;
+    height: 30px;
+    margin-top: 25px;
+    border-radius: 50%;
+}
+.menus{
+    background:#400775;
+    width: 100%;
+    height: 90px;
+    margin-top: -25px;
+}
+.menus .imagens{
+    margin-left: 555px;
+    align-items: center;
+    display: flex;
+    width: 500px;
+    gap: 30px;
+}
+ #first{
+    width: 55px;
+    height: 55px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3), 0 6px 20px 0px rgba(0, 0, 0, 0.3);
+}
+#first:hover{
+    box-shadow: none;
+}
+#first img{
+    margin-top: 10.7px;
+    margin-left: -1px;
+    margin-left: 10px;
+}
+.message{
+    width: 300px;
+}
+.botao:checked ~ .send_message{
+    visibility: visible;
+ }
+ #botao:checked ~ .just_checked,#btn:checked ~ .just_check, #button:checked ~ .just_checke{
+    background: rgb(143, 142, 142);
+ }
+ .just_checked, .just_check, .just_checke{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+ }
+#send_message{
+    width: 35em;
+    height: 5em;
+    margin-left: 1em;
+    margin-top: -7.3em;
+    display: flex;
+    visibility: hidden;
+}
+#button,#botao,#btn{
+    display: none;
+}
+#button:checked ~ #send_message, #button:checked ~ .just_checke{
+    visibility: visible;
+}
+#send_message figure{
+    margin-top: 16px;
+}
+#cliente{
+    width: 70px;
+    height: 70px;
+    margin-left: 76em;
+    transform: translateY(27em);
+    object-fit: cover;
+}
+#textarea{
+    width: 20em;
+    max-height:50px;
+    min-height: 50px;
+    max-width: 20em;
+    min-width: 20em;
+    padding-left: 5px;
+    border-radius: 7px;
+    color: rgb(75, 72, 72);
+}
+#send{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: red;
+}
+#mens{
+    width: 15em;
+    height: 2em;
+    color: lightgray;
+    background:#400775;
+    border: none;
+    border-bottom: 2px solid white;
+    margin-top: 18px;
+    margin-left: -60px;
+    /* visibility: hidden; */
+}
+.menus img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+}

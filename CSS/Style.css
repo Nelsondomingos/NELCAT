@@ -1,0 +1,393 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  outline: none;
+  text-decoration: none;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+  overflow-x: hidden;
+}
+.mainPag {
+  width: 100%;
+  background-color: white;
+}
+.mainPag .sectionOne {
+  margin: -46px 0px 0px;
+  width: 100%;
+  height: 657px;
+  object-fit: cover;
+  background-image: url(../IMG/Doutor.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow-y: hidden;
+}
+.sectionOne h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  padding: 290px 0px 0px 80px;
+}
+.sectionOne p {
+  color: white;
+  font-size: 20px;
+  margin: -40px 0px 0px 90px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+}
+.urgente {
+  background-color: var(--body-white);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: fixed;
+  top: 32.5rem;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3),0 6px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.urgente:hover {
+  box-shadow: none;
+}
+.urgente img {
+  width: 40px;
+  height: 40px;
+  padding: 10px 0px 0px 10px;
+}
+.sectionTwo {
+  background-color: white;
+  width: 100%;
+  height: 407px;
+  margin-top: 50px;
+}
+.sectionTwo .firsDivToSectionTwo {
+  display: flex;
+  justify-content: center;
+  margin-top: 135px;
+  gap: 40px;
+}
+.sectionTwo .firsDivToSectionTwo .minContainer {
+  width: 350px;
+  height: 280px;
+  background-color: white;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),0 4px 7px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+.sectionTwo .firsDivToSectionTwo .minContainer img {
+  width: 75px;
+  height: 75px;
+  margin: 50px 0px 0px 90px;
+}
+.sectionTwo .firsDivToSectionTwo .minContainer p {
+  width: 200px;
+  color: #3e0b6e;
+  padding: 25px 0px 0px 70px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ourService {
+  width: 100%;
+  height: 540px;
+  margin-top: -100px;
+  background: whitesmoke;
+}
+.ourService .firstDivService span {
+  padding-left: 370px;
+  color: #7006d4;
+}
+.ourService h1 {
+  color: #3e0b6e;
+  font-size: 27px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.containers {
+  display: flex;
+  gap: 35px;
+  margin: 50px 0px 0px 160px;
+  padding: 5px;
+}
+
+.container {
+  background: white;
+  height: 290px;
+  width: 300px;
+  padding: 5px 0px 0px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),0 4px 7px 0px rgba(0, 0, 0, 0.2);
+}
+/* terceira Sessão */
+.mainPag .sectionThree {
+  margin-top: -110px;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+}
+.unlimited {
+  color: #3e0b6e;
+}
+.mainPag .sectionThree .firsDivToSectionThree {
+  margin-top: 125px;
+  width: 33%;
+}
+.mainPag .sectionThree .firsDivToSectionThree h1 {
+  color: black;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px 0px 0px 125px;
+  width: 310px;
+  text-shadow: 2px 1px 1px white;
+}
+.ours_information {
+  width: 350px;
+  margin: 20px 0px 0px 33px;
+}
+.mainPag .sectionThree .firsDivToSectionThree .informationOne {
+  color: black;
+  padding: 20px 0px 0px 125px;
+}
+.mainPag .sectionThree .firsDivToSectionThree .informationTwo {
+  color: #3e0b6e;
+  padding-left: 136px;
+}
+.mainPag .sectionThree .firsDivToSectionThree .vd {
+  margin: -120px 0px 0px 750px;
+}
+.mainPag .sectionThree .btn button {
+  background-color: #5b00b1;
+  border-radius: 20px;
+  border: none;
+  height: 2.7em;
+  width: 10.3em;
+  margin: 30px 0px 0px 170px;
+  cursor: pointer;
+  color: white;
+}
+.mainPag .sectionThree .btn button:hover {
+  background: white;
+  color: #5b00b1;
+  border: 1px solid #5b00b1;
+  transition: 1s;
+}
+
+.sectionThree button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #3e0b6e;
+}
+
+.mainPag .sectionThree .imgTypeUndraw {
+  width: 30%;
+}
+.mainPag .sectionThree .imgTypeUndraw img {
+  width: 300px;
+  margin-top: 165px;
+}
+
+/* quarta sessão */
+.mainPag .sectionFour {
+  margin-top: -110px;
+  padding: 0px;
+  width: 100%;
+  height: 525px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.mainPag .sectionFour .firsDivToSectionFour {
+  width: 500px;
+  height: 300px;
+  margin: -70px 0px 0px 300px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.someInformation {
+  width: 300px;
+  padding-left: 20px;
+  text-align: center;
+}
+.mainPag .sectionFour .firsDivToSectionFour h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  color: #3e0b6e;
+  width: 350px;
+  height: 55px;
+  margin: -50px 0px 0px 50px;
+  padding-top: 70px;
+}
+.mainPag .sectionFour .imgsToShowOurService {
+  width: 500px;
+  height: 400px;
+  margin-top: -85px;
+}
+.mainPag .sectionFour .imgsToShowOurService img {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  padding: 5px;
+  margin-top: 190px;
+  object-fit: cover;
+}
+.mainPag .sectionFour .imgsToShowOurService .theFirstImg {
+  background: #3e0b6e;
+  margin: -105px 0px -150px 70px;
+  object-fit: cover;
+}
+.mainPag .sectionFour .imgsToShowOurService .theSecondImg,
+.theLastImg {
+  background: #3e0b6e;
+  margin-right: 60px;
+  object-fit: cover;
+}
+.mainPag .sectionFour p {
+  color: black;
+  width: 400px;
+  margin: -10px 0px 0px -60px;
+  padding-top: 30px;
+}
+.mainPag .sectionFour .talkToUs button {
+  border-radius: 20px;
+  border: 1px solid white;
+  background-color: #5b00b1;
+  margin: 20px 0px 0px 70px;
+  padding-top: 5px;
+  height: 43px;
+  width: 180px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: white;
+}
+
+.mainPag .sectionFour .talkToUs button:hover {
+  background: white;
+  color: #5b00b1;
+  border: 1px solid #5b00b1;
+  transition: 1s;
+}
+/* Conheça */
+.mainPag .hereIstoKnowAboutUs .knowAboutUs {
+  width: 100%;
+  height: 470px;
+  margin: -175px 0px 0px 0px;
+  background: white;
+}
+.mainPag .hereIstoKnowAboutUs h1 {
+  color: #3e0b6e;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-left: -410px;
+  padding-top: 75px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mainPag .hereIstoKnowAboutUs p {
+  color: black;
+  padding-top: 5px;
+  height: 70px;
+  width: 355px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 315px;
+}
+.mainPag .hereIstoKnowAboutUs figure {
+  margin-top: -250px;
+}
+.mainPag .hereIstoKnowAboutUs img {
+  width: 200px;
+  height: 200px;
+  margin-left: 860px;
+  margin-top: 70px;
+  object-fit: cover;
+}
+.mainPag .hereIstoKnowAboutUs .knowMoreAboutUs button {
+  border: 1px solid #3e0b6e;
+  border-radius: 20px;
+  background: #5b00b1;
+  color: white;
+  font-size: 15px;
+  width: 180px;
+  height: 2.8em;
+  position: absolute;
+  margin: 5px 0px 0px 330px;
+  padding: 3px 20px 0px 0px;
+  cursor: pointer;
+}
+.mainPag .hereIstoKnowAboutUs .knowMoreAboutUs button:hover {
+  background: white;
+  color: #5b00b1;
+  border: 1px solid #5b00b1;
+  transition: 1s;
+}
+.mainPag .hereIstoKnowAboutUs .knowMoreAboutUs a {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  padding-left: 50px;
+}
+.mainPag #testimony {
+  width: 100%;
+  height: 600px;
+  padding-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -140px;
+  background: whitesmoke;
+}
+#testimony h1 {
+  color: #3e0b6e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-align: center;
+  height: 0px;
+  margin-top: 140px;
+}
+#testimony .comment {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+#testimony figure {
+  height: 100px;
+  margin-top: 22px;
+}
+#testimony img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 3;
+  display: inline-block;
+  bottom: 20px;
+  margin: auto;
+  translate: 87%;
+}
+#testimony .justComment {
+  width: 350px;
+  height: 280px;
+  margin-top: 10vh;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2),0 4px 7px 0px rgba(0, 0, 0, 0.2);
+}
+h3 {
+  text-align: center;
+  color: #3e0b6e;
+}
+#testimony .justComment p {
+  padding-left: 30px;
+  text-align: center;
+  width: 250px;
+} 
+
+

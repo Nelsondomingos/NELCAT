@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrador</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="../../CSS/styleAdmin.css" />
+  </head>
+  <body>
+    <main>
+      <div class="nav">
+        <div class="reloadNelcat">
+          <div class="reload"></div>
+          <h4>Nelcat</h4>
+        </div>
+        <div id="links">
+          <label class="dash">
+            <i class="bx bx-home-alt-2" id="dashIcon"></i>
+            <p>
+              <a href="#" class="tab-btn" content-id="dashboard">Dashboard</a>
+            </p>
+          </label>
+          <label class="contact">
+            <i class="bx bxs-contact" id="contactIcon"></i>
+            <p>
+              <a href="#" class="tab-btn" content-id="contacto">contactos</a>
+            </p>
+          </label>
+          <label class="users">
+            <i class="bx bx-user" id="usersIcon"></i>
+            <p>
+              <a href="#" class="tab-btn" content-id="usuario"> usuários </a>
+            </p>
+          </label>
+          <label class="consults">
+            <i class="bx bx-calendar-event" id="agended"></i>
+            <p>
+              <a href="#" class="tab-btn" content-id="consults">consultas</a>
+            </p>
+          </label>
+          <label class="notification">
+            <span id="numberNotification"></span>
+            <i class="bx bx-message-rounded-dots" id="notificationIcon"></i>
+            <p>
+              <a href="#" class="tab-btn" content-id="notification"
+                >Depoimentos</a
+              >
+            </p>
+          </label>
+
+          <div class="Logout">
+            <label class="notification">
+              <i class="bx bx-log-out" id="logoutIcon"></i>
+              <label for="sair" id="sairSessao">Sair</label>
+              <input type="checkbox" name="" id="sair">
+            </label>
+            <div class="confirmlogOut">
+              <p>Deseja saír</p>
+              <button id="buttonYes">Sim</button>
+              <button id="buttonNot">Não</button>
+              <div class="loading">
+                <div class="carregando carregandoo" onclick="validarInputs()"></div>
+              </div> 
+            </div>
+            <label class="settings">
+              <i class="bx bx-cog" id="settingsIcon"></i>
+              <p>
+                <a href="#"  class="tab-btn" content-id="settings">Definições</a>
+              </p>
+            </label>
+          </div>
+
+        </div>
+      </div>
+      <div class="userAdmin">
+        <div class="userIform">
+          <section id="secondSection">
+            <i class="bx bx-search" id="searchIcon"></i>
+            <input
+              type="text"
+              placeholder="Search by user's name/speciality"
+              id="text"
+            />
+          </section>
+          <section id="therstSection">
+            <i class="bx bx-bell" id="bellIcone"></i>
+            <div></div>
+            <img src="../../IMG/foto2.jpg" alt="" />
+          </section>
+        </div>
+        <section id="userImgActive">
+          <h4 id="nameUser"></h4>
+          <p id="emailUser"></p>
+          <div></div>
+        </section>
+        <div class="tab-content">
+          <div class="contant show" id="dashboard">
+            <span id="title" class="titleDashb">Dashboard</span>
+            <div class="howMuchUser">
+              <div id="total" class="total">
+                <p>Receita do mês kzs</p>
+                <h1>0</h1>
+                <i class="bx bx-money-withdraw"></i>
+              </div>
+              <div id="total" class="total2">
+                <p>Total de pacientes</p>
+                <h1 id="pacients"></h1>
+                <i class="bx bx-group"></i>
+              </div>
+              <div id="total" class="total3">
+                <p>Consultas de hoje</p>
+                <h1>3</h1>
+                <i class="bx bx-calendar-event" id="agended"></i>
+              </div>
+              <div id="total" class="total4">
+                <p>Pacientes aguardando</p>
+                <h1>0</h1>
+                <i class="bx bx-stopwatch watch"></i>
+              </div>
+            </div>
+          </div>
+          <div class="contant" id="contacto">
+            <h3>Contacto</h3>
+          </div>
+          <div class="contant" id="usuario">
+            <div class="container">
+              <div class="header">
+                <span id="title">Usuários cadastrado</span>
+              </div>
+              <div class="divTable">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="thInform" id="nomeElement">Nome</th>
+                      <th class="thInform" id="aplido">Apelido</th>
+                      <th class="thInform" id="phoneElement">Number</th>
+                      <th class="acao">Mais</th>
+                      <th class="acao">Excluir</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+              <div class="modal-container">
+                <div class="containerElement">
+                  <i class="bx bx-x closeElement"></i>
+                  <div class="informationUser">
+                    <div class="info-item">
+                      <label for="nome">Nome:</label>
+                      <span id="nome"> </span>
+                    </div>
+                    <div class="info-item">
+                      <label for="data_nascimento">Data de Nascimento:</label>
+                      <span id="data_nascimento"> </span>
+                    </div>
+                    <div class="info-item">
+                      <label for="email" >Email:</label>
+                      <span id="emailInformation"> </span>
+                    </div>
+                    <div class="info-item">
+                      <label for="apelido">Apelido:</label>
+                      <span id="apelido"> </span>
+                    </div>
+                    <div class="info-item">
+                      <label for="sexo">Sexo:</label>
+                      <span id="sexo"> </span>
+                    </div>
+                    <div class="info-item">
+                      <label for="passaporte">Passaporte:</label>
+                      <span id="passaporte"> </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contant" id="consults">
+            <span>Consultas desponiveis</span>
+            <div class="background">
+              <div id="spaceConsultDelet">
+                <p id="elementNameDelet"> </p>
+                <div class="buttons">
+                  <i class='bx bx-trash  delitConsult'></i>
+                  <i class='bx bx-x close'></i>
+                </div>
+              </div>
+              <div class="listsConsults">
+              </div> 
+            </div>
+          </div>
+          <div class="contant" id="notification">
+            <div class="containerTestimonal">
+              <section class="testimonial-list">
+                <h2 id="depoimentH2">Depoimentos</h2>
+                <ul>
+                  <div class="depoimentosUser"></div>
+                </ul>
+              </section>
+            </div>
+          </div>
+          <div class="contant" id="settings">
+            <div class="containerPerfile">
+              <form class="formOne">
+                <label for="nameLabel" id="nam"> Nome </label>
+                <input type="text" id="nameLabel" placeholder="Nelson" />
+                <i class="bx bx-check ckeckMark"></i>
+                <p class="ap">Apelido</p>
+                <input type="text" id="subName" placeholder="Domingos" />
+              </form>
+
+              <form class="formTwo">
+                <label for="emailLabel" id="email"> Email </label>
+                <input type="email" id="emailLabel" placeholder="nelsondomingos@gmail.com"/>
+                <label for="date" class="date" style="transform: translateX(10px);"> Data de Nascimento </label>
+                <input type="date" id="date"/>
+              </form>
+              
+              <form class="formTree">
+                <label id="genero"> Género </label>
+                <select id="generoUser"> 
+                  <option>Escolhe o sexo</option>
+                  <option>Masculino</option>
+                  <option>Femenino</option>
+                </select>
+                <select class="countryOnly">
+                  <option>Angola</option>
+                </select>
+              </form>
+              <p id="pais">País</p>
+              <button id="buttonElement"><h4 id="save">Guardar</h4></button>
+              <a href="#"  class="tab-btn" content-id="settingsPassword"  id="passorwChange">Trocar palavra passe</a>
+              <div class="loading loadingg">
+              <div class="carregando carregandooo"></div>
+             </div> 
+            </div>
+          </div> 
+          <div class="contant" id="settingsPassword">
+            <div class="passwordLoading">
+              <p>Insira a nova palavra passe</p>
+              <form class="formPassword">
+                <p id="pass"> Palavra passe </p>
+                <input type="password" id="password" placeholder="Palavra-passe"/>
+                <div id="eyes" class="olhoPassword">
+                   <img src="../../IMG/olho aberto).png" alt="" id="olhoConfirmPassword">
+                </div>      
+        
+                <label for="confirm" class="confirmPasswor"> Confirmar </label>
+                <input type="password" id="confirm" placeholder="Confirmar" />
+              </form>
+              <p id="errorPass">As palavra-passes inseridas não coincidem. Repita pls!</p>
+              <button id="saveElement" onclick="editPassword()"><span>Guardar</span></button>
+              <div class="loading loadingg">
+                <div class="carregando carregandooo" id="carreg"></div>
+              <div id="eyes" class="olhoConfirm" > 
+                <img src="../../IMG/olho aberto).png" alt="" id="olhoPassword">
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </main>
+    <script src="../../JS/scriptAdmin.js"></script>
+  </body>
+</html>
